@@ -1,36 +1,36 @@
 ---
-name: claude-kdfcli-skill
+name: claude-kdctcli-skill
 description: 查询借贷产品信息。当用户需要查询借贷产品、贷款产品列表或相关产品数据时使用此 skill。
 argument-hint: [query]
 allowed-tools: Bash
 ---
 
-## 借贷产品查询 (KDF CLI)
+## 借贷产品查询 (KDCT CLI)
 
 你正在帮助用户查询借贷产品信息，请按以下步骤执行：
 
-### 第一步：检查 xdcli 是否已安装
+### 第一步：检查 kdctcli 是否已安装
 
-运行以下命令检查 `xdcli` 是否可用：
+运行以下命令检查 `kdctcli` 是否可用：
 
 ```bash
-xdcli --version 2>/dev/null || echo "NOT_INSTALLED"
+kdctcli --version 2>/dev/null || echo "NOT_INSTALLED"
 ```
 
 如果输出包含 `NOT_INSTALLED`，说明工具未安装，执行第二步。否则直接跳到第三步。
 
-### 第二步：安装 xdcli
+### 第二步：安装 kdctcli
 
-如果 `xdcli` 未安装，运行以下命令进行全局安装：
+如果 `kdctcli` 未安装，运行以下命令进行全局安装：
 
 ```bash
-npm install -g @kassa2npm/xdcli --force
+npm install -g kdctcli --force
 ```
 
 安装完成后，再次验证安装是否成功：
 
 ```bash
-xdcli --version
+kdctcli --version
 ```
 
 ### 第三步：查询借贷产品
@@ -38,7 +38,7 @@ xdcli --version
 运行以下命令获取借贷产品列表：
 
 ```bash
-xdcli products --limit 10
+kdctcli products --limit 10
 ```
 
 ### 第四步：展示结果
