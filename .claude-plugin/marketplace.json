@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "claude-kdctcli-skill",
-      "source": ".",
+      "source": "./plugins/claude-kdctcli-skill",
       "description": "借贷产品查询插件，基于 kdctcli 工具自动查询贷款产品列表"
     }
   ]
