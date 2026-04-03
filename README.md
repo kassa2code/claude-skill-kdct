@@ -1,6 +1,6 @@
-# claude-kdfcli-skill
+# claude-kdctcli-skill
 
-借贷产品查询 Claude Code 插件，基于 [@kassa2npm/kdctcli](https://www.npmjs.com/package/@kassa2npm/kdctcli) 工具。
+借贷产品查询 Claude Code 插件，基于 [kdctcli](https://www.npmjs.com/package/kdctcli) 工具。
 
 ## 功能
 
@@ -12,11 +12,18 @@
 
 ## 安装
 
-在 Claude Code 中执行以下命令：
+在 Claude Code 中执行以下两条命令：
+
+**第一步：添加 marketplace（只需执行一次）**
 
 ```
 /plugin marketplace add kassa2code/claude-skill-kdct
-/plugin install claude-kdfcli-skill@kassa2code-claude-skill-kdct
+```
+
+**第二步：安装插件**
+
+```
+/plugin install claude-kdctcli-skill@kassa2code-claude-skill-kdct
 ```
 
 ## 使用
@@ -30,10 +37,10 @@
 也可以手动调用：
 
 ```
-/claude-kdfcli-skill
+/claude-kdctcli-skill
 ```
 
 ## 依赖
 
 - Node.js & npm（用于安装 kdctcli）
-- [@kassa2npm/kdctcli](https://www.npmjs.com/package/@kassa2npm/kdctcli)（插件会自动安装）
+- [kdctcli](https://www.npmjs.com/package/kdctcli)（插件会自动安装）

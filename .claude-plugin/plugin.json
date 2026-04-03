@@ -1,7 +1,7 @@
 {
-  "name": "claude-kdfcli-skill",
+  "name": "claude-kdctcli-skill",
   "version": "1.0.0",
-  "description": "查询借贷产品信息的 Claude Code 插件，基于 @kassa2npm/kdctcli 工具",
+  "description": "查询借贷产品信息的 Claude Code 插件，基于 kdctcli 工具",
   "author": "kassa2code",
-  "skills": ["skills/claude-kdfcli-skill"]
+  "skills": ["skills/claude-kdctcli-skill"]
 }

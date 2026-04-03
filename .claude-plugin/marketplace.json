@@ -1,0 +1,13 @@
+{
+  "name": "kassa2code-claude-skill-kdct",
+  "owner": {
+    "name": "kassa2code"
+  },
+  "plugins": [
+    {
+      "name": "claude-kdctcli-skill",
+      "source": ".",
+      "description": "借贷产品查询插件，基于 kdctcli 工具自动查询贷款产品列表"
+    }
+  ]
+}
