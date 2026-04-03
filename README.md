@@ -51,6 +51,22 @@ kdctcli gssfreport --keyword "企业名称"
 
 ---
 
+### 能力4：企业负面信息查询
+
+查询企业的负面记录，包括失信被执行、行政处罚、司法案件、经营异常、吊销注销等风险信息。
+
+**触发示例：**
+- "查一下XX公司有没有负面信息"
+- "XX公司有失信记录吗"
+- "查询某某公司的风险信息"
+
+**底层命令：**
+```bash
+kdctcli freeze --keyword "企业名称"
+```
+
+---
+
 ## 前置条件
 
 - [Claude Code](https://claude.ai/code) CLI 已安装
@@ -109,6 +125,7 @@ irm https://raw.githubusercontent.com/kassa2code/claude-skill-kdct/main/install.
 | 工商信息查询 | "查一下XX公司的工商信息" |
 | 商机线索 | "帮我找深圳的商机线索" |
 | 尽调报告 | "对XX公司做一份尽调报告" |
+| 负面信息 | "查一下XX公司有没有负面信息" |
 
 也可以手动调用：
 

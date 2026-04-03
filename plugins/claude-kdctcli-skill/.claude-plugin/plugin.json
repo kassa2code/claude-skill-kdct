@@ -1,7 +1,7 @@
 {
   "name": "claude-kdctcli-skill",
   "version": "1.0.0",
-  "description": "企业信息与商机查询 Claude Code 插件，基于 kdctcli 工具。支持企业工商信息查询、客户商机线索获取、企业资质尽调报告生成。",
+  "description": "企业信息与商机查询 Claude Code 插件，基于 kdctcli 工具。支持企业工商信息查询、客户商机线索获取、企业资质尽调报告生成、企业负面信息查询。",
   "author": {
     "name": "kassa2code"
   },
