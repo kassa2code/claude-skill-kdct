@@ -10,15 +10,22 @@
 2. 调用 `kdctcli products --limit 10` 获取借贷产品列表
 3. 以表格形式展示产品名称、利率、额度、期限等信息
 
+## 前置条件
+
+- [Claude Code](https://claude.ai/code) CLI 已安装
+- Node.js & npm（用于自动安装 kdctcli）
+
 ## 安装
 
-在 Claude Code 中执行以下两条命令：
+在 Claude Code 中依次执行以下两条命令：
 
-**第一步：添加 marketplace（只需执行一次）**
+**第一步：注册 marketplace**
 
 ```
 /plugin marketplace add kassa2code/claude-skill-kdct
 ```
+
+> 将本插件的 marketplace 注册到 Claude Code，只需执行一次。
 
 **第二步：安装插件**
 
@@ -26,9 +33,11 @@
 /plugin install claude-kdctcli-skill@kassa2code-claude-skill-kdct
 ```
 
+> 从已注册的 marketplace 中安装 `claude-kdctcli-skill` 插件。
+
 ## 使用
 
-安装后，直接在 Claude Code 中提问即可自动触发：
+安装后，在 Claude Code 中直接提问即可自动触发：
 
 - "帮我查询借贷产品"
 - "有哪些贷款产品"
@@ -40,7 +49,17 @@
 /claude-kdctcli-skill
 ```
 
-## 依赖
+## 项目结构
 
-- Node.js & npm（用于安装 kdctcli）
-- [kdctcli](https://www.npmjs.com/package/kdctcli)（插件会自动安装）
+```
+.
+├── .claude-plugin/
+│   └── marketplace.json          # marketplace 配置
+└── plugins/
+    └── claude-kdctcli-skill/
+        ├── .claude-plugin/
+        │   └── plugin.json       # 插件元信息
+        └── skills/
+            └── claude-kdctcli-skill/
+                └── SKILL.md      # skill 实现
+```
