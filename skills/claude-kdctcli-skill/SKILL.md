@@ -24,7 +24,7 @@ kdctcli --version 2>/dev/null || echo "NOT_INSTALLED"
 如果 `kdctcli` 未安装，运行以下命令进行全局安装：
 
 ```bash
-npm install -g kdctcli --force
+npm install -g kdctcli
 ```
 
 安装完成后，再次验证安装是否成功：
