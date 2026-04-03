@@ -17,6 +17,34 @@
 
 ## 安装
 
+### 方式一：一键脚本安装（推荐）
+
+**Linux / macOS**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kassa2code/claude-skill-kdct/main/install.sh | bash
+```
+
+**Windows（PowerShell）**
+
+```powershell
+irm https://raw.githubusercontent.com/kassa2code/claude-skill-kdct/main/install.ps1 | iex
+```
+
+默认安装到 user 范围（全局可用）。如需指定范围：
+
+```bash
+# Linux / macOS
+bash <(curl -fsSL https://raw.githubusercontent.com/kassa2code/claude-skill-kdct/main/install.sh) project
+
+# Windows
+irm https://raw.githubusercontent.com/kassa2code/claude-skill-kdct/main/install.ps1 | iex -args project
+```
+
+可选范围：`user`（默认，全局）、`project`（仅当前项目）、`local`（本地，不提交 git）
+
+### 方式二：Claude Code 命令安装
+
 在 Claude Code 中依次执行以下两条命令：
 
 **第一步：注册 marketplace**
@@ -25,15 +53,11 @@
 /plugin marketplace add kassa2code/claude-skill-kdct
 ```
 
-> 将本插件的 marketplace 注册到 Claude Code，只需执行一次。
-
 **第二步：安装插件**
 
 ```
 /plugin install claude-kdctcli-skill@kassa2code-claude-skill-kdct
 ```
-
-> 从已注册的 marketplace 中安装 `claude-kdctcli-skill` 插件。
 
 ## 使用
 
